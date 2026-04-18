@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLAXON - Tu tienda de fútbol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER / HERO -->
+<header>
+  <div class="hero">
+    <h1>GLAXON</h1>
+    <p>Viste tu pasión, juega al máximo ⚽</p>
+    <a href="#productos-section" class="btn-hero">Ver Productos</a>
+  </div>
+</header>
+
+<!-- FILTROS DE CATEGORÍA -->
+<nav id="filtros"></nav>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="banner">
+  <img src="https://i.imgur.com/nR12DUN.jpeg" alt="Promoción" class="banner-img">
+  <div class="banner-text">
+    <h2>Todo lo que un crack necesita</h2>
+    <p>Ofrecemos una amplia selección de guayos para todo tipo de terreno, balones, uniformes, medias técnicas y accesorios. Calidad garantizada y las mejores marcas para jugadores aficionados y profesionales. Envíos a todo el país.</p>
+  </div>
+</section>
+
+<div class="carrito-icono" onclick="toggleCarrito()">
+  🛒
+  <span id="notificacion-carrito" class="notificacion"></span>
+</div>
+
+<div id="carrito-dropdown" class="carrito-dropdown">
+  <h3>Tu carrito</h3>
+  <ul id="lista-carrito"></ul>
+  <p class="total">Total: <span id="total">$0</span></p>
+
+  <div class="acciones-carrito">
+    <button onclick="vaciarCarrito()">Vaciar</button>
+    <button onclick="pagar()">Pagar</button>
+  </div>
+</div>
+
+<!-- CATÁLOGO DE PRODUCTOS -->
+<section id="productos-section">
+  <h2 class="section-title">Catálogo de Productos</h2>
+  <div id="productos"></div>
+</section>
+
+
+<!-- POR QUÉ COMPRAR -->
+<section class="info-section">
+  <h2>¿Por qué comprar en GLAXON?</h2>
+
+  <div class="beneficios-grid">
+
+    <div class="beneficio-card">
+      <span>🚚</span>
+      <h3>Envíos a todo el país</h3>
+      <p>Recibe tus productos de forma rápida y segura en cualquier ciudad.</p>
+    </div>
+
+    <div class="beneficio-card">
+      <span>💳</span>
+      <h3>Pagos fáciles</h3>
+      <p>Aceptamos Nequi, Daviplata, transferencia y contraentrega.</p>
+    </div>
+
+    <div class="beneficio-card">
+      <span>🔥</span>
+      <h3>Productos de calidad</h3>
+      <p>Trabajamos con materiales duraderos ideales para el alto rendimiento.</p>
+    </div>
+
+    <div class="beneficio-card">
+      <span>⚽</span>
+      <h3>Para verdaderos jugadores</h3>
+      <p>Equipamiento pensado para mejorar tu nivel en la cancha.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- RECOMENDADOS -->
+<section class="info-section">
+  <h2>🔥 Recomendados</h2>
+  <div id="recomendados"></div>
+</section>
+
+<!-- TOP PRODUCTOS -->
+<section class="info-section">
+  <h2>🏆 Top Productos</h2>
+  <div id="top"></div>
+</section>
+
+<!-- DUELO DE PRODUCTOS -->
+<section class="info-section">
+  <h2>⚔️ Duelo de Productos</h2>
+  <div id="duelo"></div>
+  <p class="duelo-info">Haz click en el producto que más te guste para subirlo en el ranking</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p>Contacto: WhatsApp | Facebook | Instagram</p>
+    <p>Medios de pago: Nequi, Daviplata, Movii, Bre-b</p>
+    <p>&copy; 2026 GLAXON - Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
